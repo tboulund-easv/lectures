@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "Skolar Sans";
+	src: url("SkolarSansPro-Roman.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Skolar Sans Bold";
+	src: url("SkolarSansPro-Bold.otf") format("opentype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Skolar Sans Book";
+	src: url("SkolarSansPro-Book.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}

@@ -1,0 +1,42 @@
+name: Build & Deploy to GitHub Pages (per branch)
+
+on:
+  push:
+    # Run on all branches except main
+    branches-ignore:
+      - main
+
+permissions:
+  contents: write   # required to push to gh-pages
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20   # or whatever version you need
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        # Assume build output goes to ./dist
+        # Adjust if your build directory is different
+
+      - name: Deploy to GitHub Pages (under branch subfolder)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./dist
+          # This makes each branch go into its own subfolder:
+          # e.g. gh-pages/<branch-name>/index.html
+          destination_dir: ${{ github.ref_name }}
+          keep_files: true   # keep existing content for other branches

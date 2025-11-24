@@ -1,0 +1,27 @@
+@import url(../assets/fonts/skolar-sans.css);
+
+.slidev-layout {
+	font-family: Skolar Sans, sans-serif !important;
+	background-image: url(../assets/images/background.png) !important;
+	background-size: cover !important;
+}
+
+.slidev-layout.cover {
+	background-color: #C00C0D !important;
+	background-image: url(../assets/images/cover.png) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Skolar Sans Bold, sans-serif !important;
+	color: #C00C0D !important;
+}
+
+.slidev-layout.cover h1, .slidev-layout.cover h2, .slidev-layout.cover h3,
+.slidev-layout.cover h4, .slidev-layout.cover h5, .slidev-layout.cover h6 {
+	color: white !important;
+}
+
+.slidev-layout .slide-background {
+  transition: none !important;
+  animation: none !important;
+}
