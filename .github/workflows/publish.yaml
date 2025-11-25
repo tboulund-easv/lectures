@@ -36,8 +36,8 @@ jobs:
           server: ${{ vars.FTP_HOST }}
           username: ${{ vars.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist
-          server-dir: /public_html/EASV/${{ github.ref_name }}
+          local-dir: ./dist/
+          server-dir: /lectures/${{ github.ref_name }}/
           # protocol: ftps
           port: 21
           # git-ftp-args: --insecure
