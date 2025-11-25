@@ -30,13 +30,14 @@ jobs:
         # Assume build output goes to ./dist
         # Adjust if your build directory is different
 
-      - name: Deploy to GitHub Pages (under branch subfolder)
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./dist
-          # This makes each branch go into its own subfolder:
-          # e.g. gh-pages/<branch-name>/index.html
-          destination_dir: ${{ github.ref_name }}
-          keep_files: true   # keep existing content for other branches
+          server: ${{ vars.FTP_HOST }}
+          username: ${{ vars.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist
+          server-dir: /public_html/EASV/${{ github.ref_name }}
+          # protocol: ftps
+          port: 21
+          # git-ftp-args: --insecure
