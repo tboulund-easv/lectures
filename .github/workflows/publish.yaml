@@ -25,6 +25,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # in vite.config.ts replace the base path withthe branch name
+      - name: Set base path in vite.config.ts
+        run: |
+          BRANCH_NAME=${{ github.ref_name }}
+          sed -i "s|base: .*|base: '/$BRANCH_NAME/',|" vite.config.ts
+
       - name: Build
         run: npm run build
         # Assume build output goes to ./dist

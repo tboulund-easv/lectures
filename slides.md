@@ -1,8 +1,8 @@
 ---
 theme: seriph
-drawings:
-  persist: true
 transition: fade
+routerMode: hash
+lineNumbers: true
 ---
 
-Hello World
+# New presentation
