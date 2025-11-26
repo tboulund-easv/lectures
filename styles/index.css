@@ -19,6 +19,8 @@ h1, h2, h3, h4, h5, h6 {
 .slidev-layout.cover h1, .slidev-layout.cover h2, .slidev-layout.cover h3,
 .slidev-layout.cover h4, .slidev-layout.cover h5, .slidev-layout.cover h6 {
 	color: white !important;
+	border: none !important;
+	text-align: center !important;
 }
 
 .slidev-layout .slide-background {
