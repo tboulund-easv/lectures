@@ -224,6 +224,4 @@ A blog can build trust when it shows:
 	</SpeechBubble>
 </div>
 
-
-
 ---
