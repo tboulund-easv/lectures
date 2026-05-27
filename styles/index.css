@@ -1,33 +1,21 @@
-@import url(../assets/fonts/skolar-sans.css);
-
-.slidev-layout {
-	font-family: Skolar Sans, sans-serif !important;
-	background-image: url(../assets/images/background.png) !important;
-	background-size: cover !important;
+.neversink-mybrand-scheme {
+  --neversink-bg-color: #0f172a;
+  --neversink-bg-code-color: #1e293b;
+  --neversink-fg-code-color: #f8fafc;
+  --neversink-fg-color: #e2e8f0;
+  --neversink-text-color: #ffffff;
+  --neversink-border-color: #38bdf8;
+  --neversink-highlight-color: #f59e0b;
 }
 
-.slidev-layout.cover {
-	background-color: #C00C0D !important;
-	background-image: url(../assets/images/cover.png) !important;
+.slidev-layout ul,
+.slidev-layout ol,
+.slidev-layout li {
+  line-height: normal;
+  margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: Skolar Sans Bold, sans-serif !important;
-	color: #C00C0D !important;
-}
-
-.slidev-layout.cover h1, .slidev-layout.cover h2, .slidev-layout.cover h3,
-.slidev-layout.cover h4, .slidev-layout.cover h5, .slidev-layout.cover h6 {
-	color: white !important;
-	border: none !important;
-	text-align: center !important;
-}
-
-.slidev-layout .slide-background {
-  transition: none !important;
-  animation: none !important;
-}
-
-strong {
-	font-family: Skolar Sans Bold, sans-serif !important;
+.slidev-page {
+  background-color: var(--neversink-bg-color);
+  color: var(--neversink-text-color);
 }

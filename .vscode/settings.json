@@ -1,3 +1,14 @@
 {
-	"slidev.port": 3030
+	"slidev.port": 3030,
+	"slidev.include": [
+		"**/slides.md",
+		"sample.md",
+		"pages/devops/05/Writing code reviews.md",
+		"pages/devops/05/Branch protection.md",
+		"pages/devops/05/Conventional commits.md",
+		"pages/devops/05/Pull requests.md",
+		"README.md",
+		"courses/cms2/W33/What is blogs.md",
+		"courses/cms2/W33/What is blogs.md"
+	]
 }

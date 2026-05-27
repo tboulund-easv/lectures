@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: seriph
+theme: neversink
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://cover.sli.dev
@@ -601,6 +601,14 @@ import { ref } from 'vue'
 import { emptyArray } from './external'
 
 const arr = ref(emptyArray(10))
+console.log("YAY");
+```
+
+```php
+<?php
+echo "Hello";
+?>
+<b>Hello World <?= $yay ?></b>
 ```
 
 Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
