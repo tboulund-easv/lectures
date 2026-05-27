@@ -106,20 +106,22 @@ A blog is both content and structure.
 layout: top-title-two-cols
 color: indigo
 background: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQ..."
-columns: is-8
+columns: is-5
 ---
 
 ::title::
 # Blog posts vs. pages
 
 ::left::
+
+<div class="text-xl">
+
 ## Blog posts
 * timely -> often have a date
 * part of a feed
 * often have date and author
 * can be categorized and tagged
 * usually invite browsing
-
 
 ## Pages
 * more permanent
@@ -128,8 +130,11 @@ columns: is-8
 * examples: About, Contact, Services
 * often sit in the navigation menu
 
+</div>
+
 ::right::
-<img src="./images/image-1.png" style="max-height: 50vh;">
+
+<img src="./images/image-1.png" style="max-height: 50vh; margin: auto;">
 
 
 <!--
