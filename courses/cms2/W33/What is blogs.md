@@ -161,8 +161,6 @@ color: indigo
 ::content::
 WordPress began as a blogging platform. That means blog thinking is built into its DNA:
 
-
-
 * posts
 * authors
 * dates
